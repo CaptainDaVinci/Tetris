@@ -5,18 +5,7 @@
 #include <curses.h>
 #include <unistd.h>
 
-auto constexpr CLEAR = "\033[2J\033[1;1H";
 auto constexpr REFRESH = 200000;
-
-constexpr auto RED = "\x1b[31;1m";
-constexpr auto GREEN = "\x1b[32;1m";
-constexpr auto LIME = "\x1b[30;1m";
-constexpr auto YELLOW = "\x1b[33;1m";
-constexpr auto BLUE = "\x1b[34;1m";
-constexpr auto MAGENTA = "\x1b[35;1m";
-constexpr auto CYAN = "\x1b[36;1m";
-constexpr auto WHITE = "\x1b[37;0m";
-constexpr auto RESET = "\x1b[0m";
 
 void printBlock(int n)
 {
