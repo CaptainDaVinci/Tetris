@@ -5,7 +5,7 @@
 #include <curses.h>
 #include <unistd.h>
 
-auto constexpr REFRESH = 200000;
+auto constexpr REFRESH = 160000;
 
 void printBlock(int n)
 {
