@@ -9,6 +9,12 @@ auto constexpr REFRESH = 160000;
 
 using Block = std::array<std::array<int, 4>, 4>;
 
+/* 
+	Function Input: 
+		n -> id of a tetrameno block. 
+	Function Output: 
+		prints a tetramino block grid number. 
+*/
 void printBlock(int n) {
     switch (n) {
         case 1:
@@ -53,11 +59,16 @@ void printBlock(int n) {
     }
 }
 
+/* 
+	Class definition for the Tetramino Block. 
+*/
 class Tetromino {
     Block original, temp;
 
 public:
     Block block;
+    
+    /* Constructor initialising all the blocks value to be 0 */ 
     Tetromino() {
         for (unsigned i = 0; i < block.size(); ++i) {
         	for (unsigned j = 0; j < block[i].size(); ++j) {
@@ -66,6 +77,7 @@ public:
     	}
 	}
 
+	/* Assign the type of the block given the block number */ 
     void setBlock(int block) {
         switch (block) {
             case 1:
@@ -181,6 +193,7 @@ private:
     friend void printBlock(int n);
 };
 
+/* Main Tetris class, which uses a Tetromino object */ 
 class Tetris  {
     const int points = 5;
     int score, blockID, nextBlockID;
@@ -398,6 +411,7 @@ private:
     friend void printBlock(int n);
 };
 
+/* Driver program to run the Tetris game */ 
 int main() {
     initscr();
     cbreak();
