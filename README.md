@@ -1,13 +1,14 @@
 # Tetris
-Text based tetris in C++ and ncurses library
+Text based tetris game in C++ and ncurses library. 
 
 ### Dependencies
 Requires g++ and ncurses library.
 
 ### Usage
-compiler using: 
+Compile using: 
  `g++ tetris.cc -lncurses -o tetris`
  
-Execute:
- `./tetris`
+### Execution
+1. Linux : `./tetris`
+2. Windows : `tetris.exe`
  
