@@ -10,10 +10,8 @@ auto constexpr REFRESH = 160000;
 using Block = std::array<std::array<int, 4>, 4>;
 
 /* 
-	Function Input: 
-		n -> id of a tetrameno block. 
-	Function Output: 
-		prints a tetramino block grid number. 
+	Function to print the tetramino block with suitable tetramino 
+	number based on block id provided as input. 
 */
 void printBlock(int n) {
     switch (n) {
